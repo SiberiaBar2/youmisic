@@ -1,6 +1,6 @@
 import React, { Component, Suspense } from 'react'
 
-import { PageHeader, Spin, Affix } from 'antd';
+import { PageHeader, Spin, Affix, Modal } from 'antd';
 import '../assets/css/layout.css'
 import { HashRouter as Router, NavLink } from 'react-router-dom'
 
@@ -9,6 +9,15 @@ import routes from '../router/router'
 import Routerview from '../router/Routerview'
 
 export default class Layout extends Component {
+
+    downLoad () {
+        Modal.confirm({
+            title: 'tips',
+            content: '亲， 暂不开放App下载哦！',
+            okText: '好的',
+            cancelText: '我知道了'
+        })
+    }
     render() {
 
         return (
@@ -22,7 +31,7 @@ export default class Layout extends Component {
                                     className="site-page-header"
                                     title="悠米音乐"
                                 />
-                                <button className="btn">下载APP</button>
+                                <button className="btn" onClick={this.downLoad.bind(this)}>下载APP</button>
                             </div>
                             {/* 导航栏 */}
                             <div className="navaba">

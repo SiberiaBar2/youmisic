@@ -22,7 +22,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build -r git@github.com:SiberiaBar2/music.git -b main"
   },
   "eslintConfig": {
     "extends": [

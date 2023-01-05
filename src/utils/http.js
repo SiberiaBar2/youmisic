@@ -18,4 +18,6 @@ axios.defaults.baseURL = basURL
 
 React.Component.prototype.$http = axios;
 
+export const $http = React.Component.prototype.$http;
+
 export default axios
