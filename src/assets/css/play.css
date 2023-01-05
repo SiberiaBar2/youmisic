@@ -1,0 +1,81 @@
+.play-container{
+    background-color: #7f7f7f;
+    position: relative;
+    padding-top: 20px;
+}
+.play-container .play-box{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../imgs/disc-ip6.png');
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.play-container .play-box img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.play-container .play-box img.rotate{
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: rotate 11s linear infinite
+}
+
+.play-container .play-box .btn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: url('../imgs/list_sprite.png');
+    background-size: 40px;
+    left: 50%;
+    top: 50%;
+    transform: translate( -50% ,-50%);
+}
+.play-container .play-box .play-btn{
+    background-position: 0 0 ;
+}
+.play-container .play-box .pause-btn{
+    background-position: 0 -42px ;
+}
+
+
+.play-container .content{
+    text-align: center;
+    color: #fff;
+}
+
+.play-container .content h3{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* 定义动画 */
+@keyframes rotate {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+/* 小棍子 */
+.play-container .play-control{
+    position: absolute;
+    top: 0;
+    left: 68%;
+    width: 100px;
+    height: 160px;
+    background: url('../imgs/needle-ip6.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 2s;
+    transform-origin: top left;
+    z-index: 1;
+}

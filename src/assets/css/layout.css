@@ -1,0 +1,97 @@
+.App{
+    text-align: none !important;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+.headercontain{
+    background-color: #ff4b00;
+    position: relative;
+    /* color: #FFF !important; */
+}
+
+.section {
+    padding: 0 10px;
+    margin: 10px 0;
+}
+.ant-page-header-heading-title{
+    color: #FFF !important;
+}
+.btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    background-color: #FFF;
+    border: none;
+    width: 100px;
+    line-height: 36px;
+    border-radius: 18px;
+    text-align: center;
+    outline: none;
+    font-weight: 700;
+    color:#ff4b00;
+}
+.ant-page-header-heading{
+    width: 200px;
+}
+.ant-page-header site-page-header ant-page-header-ghost ant-page-header-compact {
+    width: 200px;
+    color: #FFF;
+    background-color: #ff4b00;
+}
+
+/* 导航 */
+.navaba{
+    display: flex;
+}
+.navaba a{
+    color: #666;
+    flex: 1 1;
+    line-height: 60px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    background: #FFF;
+}
+.navaba a.active{
+    border-bottom: 2px solid #ff4b00;
+}
+
+.lun{
+    width: 100%;
+    height: 151px;
+}
+.lun img{
+    width: 100%;
+    height: 151px;
+}
+
+.ant-carousel .slick-dots-bottom{
+    z-index: 0;
+}
+.wrap{
+    position: relative;
+    padding: 4px 0;
+    text-align: none;
+}
+.wrap h3{
+    text-align: left;
+    margin-left: 10px;
+    font-weight: 700;
+}
+.selet{
+    position: absolute;
+    background-color: #ff4b00;
+    height: 26px;
+    width: 5px;
+}
+
+.ant-card-body{
+    padding: 0 !important;
+}
+.ant-card-body img{
+    width: 118px;
+    height: 118px;
+}

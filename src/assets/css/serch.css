@@ -1,0 +1,12 @@
+.serch-list .ant-input-affix-wrapper-lg{
+    border-radius: 20px ;
+}
+
+.btnwrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.btnwrap .ant-btn-round{
+    width: 23%;
+    margin: 2px;
+}
